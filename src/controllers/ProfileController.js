@@ -31,7 +31,7 @@ exports.loginUser=(req,res)=>{
             if(data.length>0){
                 // create token
                 let payload={
-                    exp: Math.floor(Date.now() / 1000) + (48*60 * 60),
+                    exp: Math.floor(Date.now() / 1000) + (60 * 60),
                     data:data[0]
                 }
 
